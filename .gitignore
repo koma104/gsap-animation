@@ -1,0 +1,15 @@
+# 依存関係
+node_modules/
+dist/
+
+# Cursor関連
+.cursor/
+
+# エディタ/IDE
+.vscode/
+.DS_Store
+
+# ログ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
