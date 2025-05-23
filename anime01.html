@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devlab</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="split" id="split1">
+        <h1>Welcome to My Website</h1>
+        <p>This is a sample text animation using GSAP and SplitText.</p>
+      </div>
+      <button class="replay-btn" data-target="#split1">
+        アニメーション再生
+      </button>
+    </div>
+    <div class="container">
+      <div class="split" id="split2">
+        <h1 class="title">Loading…</h1>
+      </div>
+      <button class="replay-btn" data-target="#split2">
+        アニメーション再生
+      </button>
+    </div>
+    <div class="container">
+      <div class="draggable-element">
+        <p>ドラッグすると拡大する</p>
+      </div>
+    </div>
+    <div class="container">
+      <button class="replay-btn" data-target="#grid">アニメーション再生</button>
+      <div class="container">
+        <div id="grid" class="grid">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+          <div class="grid-item">9</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <svg viewBox="0 0 200 200" id="morphBtn">
+        <!-- 初期：丸 -->
+        <path id="mainShape" fill="#ff6f61" d="M100,30 a70,70 0 1,0 0.01,0" />
+        <!-- ハート -->
+        <path
+          id="heart"
+          fill="none"
+          d="M100,160
+           C20,100 20,40 100,70
+           C180,40 180,100 100,160 Z"
+        />
+        <!-- 星 -->
+        <path
+          id="star"
+          fill="none"
+          d="M100,30
+           L117,70
+           L160,75
+           L130,105
+           L140,150
+           L100,130
+           L60,150
+           L70,105
+           L40,75
+           L83,70 Z"
+        />
+      </svg>
+      <button class="replay-btn" data-target="#morphBtn">変形！</button>
+    </div>
+
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
