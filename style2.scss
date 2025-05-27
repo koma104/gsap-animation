@@ -1,0 +1,49 @@
+.ScrollSmoother-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.section {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+  position: relative;
+}
+
+.section-box-01 {
+  width: 140px;
+  height: 140px;
+  background-color: rgb(255, 16, 16);
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.section-box-02 {
+  width: 150px;
+  height: 150px;
+  background-color: #cfcfcf;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.section-box-03 {
+  width: 130px;
+  height: 130px;
+  background-color: rgb(83, 255, 169);
+  position: absolute;
+  bottom: 50%;
+  right: 70%;
+}

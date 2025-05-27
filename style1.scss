@@ -1,19 +1,4 @@
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
   font-family: Arial, sans-serif;
 }
 
@@ -24,7 +9,7 @@ body {
 
 h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   color: #333;
 }
 
@@ -39,25 +24,13 @@ p {
   opacity: 0;
   transform: translateY(20px);
 }
+
 .container {
+  display: grid;
+  place-content: center;
   text-align: center;
-  margin-bottom: 5rem;
-}
-
-.replay-btn {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.replay-btn:hover {
-  background-color: #555;
+  padding-inline: 1rem;
+  margin-block-end: 5rem;
 }
 
 .draggable-element {
@@ -84,21 +57,21 @@ p {
 }
 
 .replay-btn {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
+  padding: 1rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 100vmax;
   cursor: pointer;
   transition: all 0.3s;
   text-align: center;
   margin-inline: auto;
   display: block;
-  margin-top: 5rem;
 }
 
 .draggable-element {
-  background: #333;
+  background: #000;
   padding: 2rem;
   border-radius: 10px;
   cursor: move;
@@ -119,12 +92,12 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   cursor: pointer;
-  margin-block-start: 2rem;
-  min-height: 350px;
+  margin-block-end: 2rem;
+  min-height: 340px;
 }
 
 .grid-item {
-  background: #333;
+  background: #000;
   color: #fff;
   padding: 2rem;
   border-radius: 10px;

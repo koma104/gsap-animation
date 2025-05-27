@@ -1,0 +1,31 @@
+.spacer {
+  height: 45vh;
+}
+
+#wrapper {
+  position: relative;
+  height: 160vh;
+}
+
+#ball {
+  width: 30px;
+  height: 30px;
+  background: #e91e63;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+svg {
+  position: absolute;
+  top: 10vh;
+  width: 100px;
+  height: 80vh;
+  display: block;
+  margin: 0 auto;
+  z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

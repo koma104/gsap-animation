@@ -5,6 +5,6 @@ export default defineConfig({
     devSourcemap: true, // 開発時のCSSソースマップ有効化
   },
   server: {
-    open: '/anime01.html', // ここで開きたいHTMLファイルを指定
+    open: '/index.html', // ここで開きたいHTMLファイルを指定
   },
 });

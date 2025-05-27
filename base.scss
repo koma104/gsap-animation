@@ -1,0 +1,39 @@
+// @view-transition {
+//   navigation: auto;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+header {
+  nav {
+    margin-block-start: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+  }
+}
+
+a {
+  text-decoration: underline;
+  color: #333;
+}
+
+button {
+  box-shadow: none;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
