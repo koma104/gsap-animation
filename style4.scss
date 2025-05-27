@@ -1,12 +1,14 @@
 .container {
-  display: grid;
-  place-content: center;
-  align-items: center;
-  padding-inline: 1rem;
+  height: calc(100vh - 40px);
 }
 
-.spacer {
-  height: 10vh;
+.content {
+  display: grid;
+  place-content: start center;
+  align-items: center;
+  padding-inline: 1rem;
+  margin-block-start: 10vh;
+  height: 100%;
 }
 
 #ball {
@@ -15,6 +17,7 @@
   background-color: rgb(50, 205, 50);
   border-radius: 50%;
   position: absolute;
+  top: 10vh;
 }
 
 .text {
